@@ -30,10 +30,13 @@ class StreamList extends Component {
             <i className="ui icon trash alternate outline" />
             Delete
           </div>
-          <div className="ui button basic yellow">
+          <Link
+            to={`/stream/edit/${stream.id}`}
+            className="ui button basic yellow"
+          >
             <i className="ui icon edit outline" />
             Edit
-          </div>
+          </Link>
         </div>
       );
     }
