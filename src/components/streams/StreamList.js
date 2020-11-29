@@ -15,7 +15,9 @@ class StreamList extends Component {
           {this.renderBtns(stream)}
           <i className="ui icon middle aligned large camera" />
           <div className="content">
-            {stream.title}
+            <Link to={`/stream/${stream.id}`} className="header">
+              {stream.title}
+            </Link>
             <div className="description">{stream.description}</div>
           </div>
         </div>
